@@ -270,6 +270,10 @@ h1 {
     background-image: url(../images/logos/youtube.png)
 }
 
+.logo-youtube {
+    background-image: url(../images/logos/rutube.png)
+}
+
 .notice {
     text-align: center;
     color: rgba(255,255,255,.44);
