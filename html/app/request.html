@@ -5,7 +5,7 @@
 
     <title>Media Player - Request</title>
 
-    <meta name="description" content="Garry's Mod Media Player request page.">
+    <meta name="description" content="Страница запроса медиаплеера Garry's Mod.">
     <meta name="keywords" content="garrysmod,media,player,request,search,youtube,vimeo,twitch,livestream,blip,reddit">
     <meta name="author" content="pixelTail Games">
 
@@ -18,7 +18,7 @@
     <div style="position:absolute;top:0;left:0;right:0;bottom:0;">
         <section class="content-container">
 
-            <h1>Share media from one of the selected services</h1>
+            <h1>Поделитесь медиафайлами из одного из выбранных сервисов</h1>
 
             <div class="services">
 
@@ -26,6 +26,13 @@
                       data-href="http://www.youtube.com/"
                       data-name="YouTube"
                       data-service="yt"
+                      onclick="selectService(this);"
+                      onmouseover="hoverService();">&nbsp;</span>
+
+                <span class="media-service logo-rutube"
+                      data-href="http://www.rutube.ru/"
+                      data-name="Rutube"
+                      data-service="rt"
                       onclick="selectService(this);"
                       onmouseover="hoverService();">&nbsp;</span>
 
@@ -68,19 +75,19 @@
             </div>
 
             <div class="url-container">
-                <h1 class="url-notice">Or request a supported URL</h1>
+                <h1 class="url-notice">Или запросите поддерживаемый URL-адрес.</h1>
                 <input id="urlinput"
                        type="text"
                        class="url-input"
                        placeholder="mp3, wav, ogg, jpg, png, webm"
                        autofocus="true"
                        onkeydown="onUrlKeyDown(event);"
-                ><a href="javascript:requestUrl();" class="url-submit">Request</a>
+                ><a href="javascript:requestUrl();" class="url-submit">Запрос</a>
             </div>
 
             <div class="url-container">
-                <a href="./tos.html">Terms of Service</a>&nbsp;
-                <a href="./privacy.html">Privacy Policy</a>
+                <a href="./tos.html">Условия использования</a>&nbsp;
+                <a href="./privacy.html">Политика конфиденциальности</a>
             </div>
 
         </section>
